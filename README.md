@@ -1,14 +1,22 @@
-The Extended Kalman filter is the nonlinear version of the Kalman filter which linearizes about an estimate of the current mean and covariance.
+# Battery State of Charge (SoC) Estimation using EKF & UKF
 
-Extended Kalman Filter operates in two main stages:
+This project implements Extended Kalman Filter (EKF) and Unscented Kalman Filter (UKF) algorithms to estimate the State of Charge (SoC) of a Li-ion battery using measured voltage and current data.  
+It includes both C and Python implementations for simulation, estimation, and visualization.
 
-Prediction (Time Update) – Estimating the system state and uncertainty at the next time step.
-Correction (Measurement Update) – Refining the state estimate using new measurements.
+---
 
+## Overview
 
-State of charge using Extended Kalman filter :
-Represents the available capacity of a battery as a percentage of its total capacity
-System Overview :  Model consists of the following inputs:
-                • Cell Voltage (V)            • Current (I)
-                • Cell Temperature (T)        • Initial SOC
+Accurate estimation of the State of Charge (SoC) is essential for reliable and safe Battery Management Systems (BMS).  
+This project compares two nonlinear estimation techniques — EKF and UKF— applied to a Li-ion battery model that captures the nonlinear voltage–SoC relationship.
 
+---
+
+## Features
+
+-  Extended Kalman Filter (EKF) implementation in C  
+-  Unscented Kalman Filter (UKF) implementation in C  
+-  Nonlinear Li-ion battery voltage model  
+-  Python script for post-processing and visualization  
+-  CSV-based I/O for easy integration  
+-  Modular and extendable structure  
