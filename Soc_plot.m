@@ -1,4 +1,4 @@
-% Code to plot simulation results from BatterySOCEstimationExample
+% Code to plot simulation results from BatterySOCEstimation
 %% Plot Description:
 %
 % The plot below shows the real and estimated battery state-of-charge.
@@ -33,4 +33,5 @@ xlabel('Time (hours)')
 legend({'Real','Estimated'},'Location','Best');
 
 % Remove temporary variables
+
 clear simlog_SOC_real simlog_SOC_est
